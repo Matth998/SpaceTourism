@@ -18,20 +18,23 @@
 
 <body>
 
-    <header class="menu container">
+    <header class="blur">
 
-      <nav class="menunav blur logo">
+      <img class="img" src="assets/shared/logo.svg" alt="">
 
-        <img class="menuimg" src="assets/shared/logo.svg" alt="">
+        <nav id = "nav"class=" logo">
 
-        <ul>
-          <li class="menulist"><a href="index.html"><b>00</b> Home</a></li>
-          <li class="menulist"><a href="destination-moon.html"><b>01</b> Destination</a></li>
-          <li class="menulist"><a href="#"><b>02</b> Crew</a></li>
-          <li class="menulist"><a href="#"><b>03</b> Technology</a></li>
-        </ul>
+          <button id="btn-mobile">
+            <span id = "hambuguer"></span>
+          </button>
 
-      </nav>
+          <ul class="menu">
+            <li class="menulist"><a href="index.html">00 Home</a></li>
+            <li class="menulist"><a href="destination-moon.html">01 Destination</a></li>
+            <li class="menulist"><a href="#">02 Crew</a></li>
+            <li class="menulist"><a href="#">03 Technology</a></li>
+          </ul>
+        </nav>
 
     </header>
     
@@ -50,6 +53,8 @@
     </div>
 
     </main>
+
+    <script src="js/index.js"></script>
 
 </body>
 </html>

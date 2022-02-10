@@ -3,13 +3,113 @@
     --white: #FFFAFA;
     --black: #000000;
     --space: font-family: 'Alice', serif;
+    --spacecolor: #0b0d19;
 
 }
 
-.container{
+.menu{
 
-    padding-left: 6%;
-    padding-right: 6%;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+header{
+
+    box-sizing: border-box;
+    height: 140px;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.menu{
+
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 140px;
+    right: 0px;
+    height: 0;
+    background: var(--spacecolor);
+    transition: .6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: auto;
+}
+
+#nav.active .menu{
+
+    height: calc(100vh - 140px);
+    display: block;
+    visibility: visible;
+
+}
+
+.menulist a{
+    
+    font-family: var(--space);
+    font-weight: 700;
+
+    font-size: 1.2rem;
+    text-decoration: none;
+
+    color: var(--white);
+
+}
+
+
+#btn-mobile{
+
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+}
+
+#hambuguer{
+
+    color: var(--white);
+    border-top: 2px solid;
+    width: 20px;
+
+}
+
+#hambuguer::after, #hambuguer::before{
+
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+
+}
+
+#nav.active #hambuguer{
+
+    border-top-color: transparent;
+
+}
+
+#nav.active #hambuguer::before{
+
+    transform: rotate(135deg);
+
+}
+
+#nav.active #hambuguer::after{
+
+    transform: rotate(-135deg);
+    top: -7px;
 
 }
 
@@ -51,7 +151,7 @@
 
 }
 
-.menu{
+.menu-universe{
 
     width:100%;
 
@@ -66,19 +166,19 @@
 
 }
 
-.menunav{
+.menu-universenav{
 
     text-align: center;
 
 }
 
-.menuimg{
+.menu-universeimg{
 
     margin-top: 2em;
 
 }
 
-.menulist{
+.menu-universelist{
 
     display: inline-block;
 
@@ -89,7 +189,7 @@
 
 }
 
-.menulist a{
+.menu-universelist a{
 
     font-family: var(--space);
     font-weight: 700;
@@ -132,9 +232,35 @@
 
 }
 
-@media screen and (min-width: 730px){
+@media screen and (min-width: 600px){
 
     .menu{
+
+        display: flex;
+        gap: .5rem;
+        background: none;
+        visibility: visible;
+        overflow-y: visible;
+        position: relative;
+        right: auto;
+        top: auto;
+    
+    }
+    
+    .menulist a{
+    
+        display: block;
+        padding: .5rem;
+    
+    }
+
+    #btn-mobile{
+
+        display: none;
+
+    }
+
+    .menu-universe{
 
         flex-direction: column;
         justify-content: space-evenly;
@@ -143,7 +269,7 @@
 
     }
 
-    .menulist a{
+    .menu-universelist a{
 
         font-size: 1.5rem;
         color: var(--white);

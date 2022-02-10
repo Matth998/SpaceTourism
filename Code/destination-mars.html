@@ -16,20 +16,23 @@
 </head>
 <body>
 
-  <header class="menu container">
+  <header class="blur">
 
-    <nav class="menunav blur logo">
+    <img class="img" src="assets/shared/logo.svg" alt="">
 
-      <img class="menuimg" src="assets/shared/logo.svg" alt="">
+      <nav id = "nav"class=" logo">
 
-      <ul>
-        <li class="menulist"><a href="index.html"><b>00</b> Home</a></li>
-        <li class="menulist"><a href="destination-moon.html"><b>01</b> Destination</a></li>
-        <li class="menulist"><a href="#"><b>02</b> Crew</a></li>
-        <li class="menulist"><a href="#"><b>03</b> Technology</a></li>
-      </ul>
+        <button id="btn-mobile">
+          <span id = "hambuguer"></span>
+        </button>
 
-    </nav>
+        <ul class="menu">
+          <li class="menulist"><a href="index.html">00 Home</a></li>
+          <li class="menulist"><a href="destination-moon.html">01 Destination</a></li>
+          <li class="menulist"><a href="#">02 Crew</a></li>
+          <li class="menulist"><a href="#">03 Technology</a></li>
+        </ul>
+      </nav>
 
   </header>
 
@@ -37,17 +40,17 @@
 
     <h2 class="subtitle">01 Pick your destination</h2>
 
-    <div class="menu">
+    <div class="menu-universe">
 
-      <nav class="menunav">
+      <nav class="menu-universenav">
 
         <img class="universe" src="assets/destination/image-mars.png" alt="Image moon" width="200" height="200">
 
         <ul>
-          <li class="menulist"><a href="destination-moon.html">Moon</a></li>
-          <li class="menulist"><a href="destination-mars.html">Mars</a></li>
-          <li class="menulist"><a href="destination-europa.html">Europa</a></li>
-          <li class="menulist"><a href="destination-titan.html">Titan</a></li>
+          <li class="menu-universelist"><a href="destination-moon.html">Moon</a></li>
+          <li class="menu-universelist"><a href="destination-mars.html">Mars</a></li>
+          <li class="menu-universelist"><a href="destination-europa.html">Europa</a></li>
+          <li class="menu-universelist"><a href="destination-titan.html">Titan</a></li>
         </ul>
 
       </nav>
@@ -71,19 +74,21 @@
   
       </div>
 
-      <div class="menu display textcenter">
+      <div class="menu-universe display textcenter">
 
         <ul>
 
-        <li class="menulist"><h2 class="info">Avg. distance</h2></li>
-        <li class="menulist"><p class= "paragrafos">225 mil. km</p></li>
+        <li class="menu-universelist"><h2 class="info">Avg. distance</h2></li>
+        <li class="menu-universelist"><p class= "paragrafos">225 mil. km</p></li>
 
-        <li class="menulist"><h2 class="info universeintem">Est. travel time</h2></li>
-        <li class="menulist"><p class= "paragrafos distance universeitem">9 months</p></li>
+        <li class="menu-universelist"><h2 class="info universeintem">Est. travel time</h2></li>
+        <li class="menu-universelist"><p class= "paragrafos distance universeitem">9 months</p></li>
 
       </ul>
 
   </main>
+
+  <script src="js/index.js"></script>
 
 </body>
 </html>
