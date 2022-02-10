@@ -46,6 +46,8 @@ body{
     font-size: 1.9em;
     text-align: center;
     padding-top: 1.5em;
+    text-decoration: none;
+    color: var(--black);
 
 }
 

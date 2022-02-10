@@ -35,7 +35,7 @@ header{
     height: 0;
     background: var(--spacecolor);
     transition: .6s;
-    z-index: 1000;
+    z-index: 10000;
     visibility: hidden;
     overflow-y: auto;
 }
@@ -50,11 +50,14 @@ header{
 
 .menulist a{
     
+    display: block;
     font-family: var(--space);
     font-weight: 700;
 
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    text-align: center;
     text-decoration: none;
+    padding-bottom: 2em;
 
     color: var(--white);
 
@@ -250,7 +253,8 @@ header{
     .menulist a{
     
         display: block;
-        padding: .5rem;
+        padding-left: .5rem;
+        padding-right: .5rem;        
     
     }
 
@@ -306,6 +310,12 @@ header{
 
         display: inline;
 
+    }
+
+    .imgcrew{
+
+        margin-left: 30em;
+    
     }
 
 }
